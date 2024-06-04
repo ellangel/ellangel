@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>:3</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .my-button {
+                color: rgb(51, 74, 113);
+            }
+            .my-button.clicked {
+                color: rgb(242, 0, 255);
+            }
+            .additional-content {
+                display: none;
+            }
+        </style>
+        <script>
+            function toggleContent() {
+                var additionalContent = document.getElementById("additional-content");
+                additionalContent.style.display = additionalContent.style.display === "none" ? "block" : "none";
+            }
+        </script>
+    </head>
+    <body>
+        <p>:D</p>
+        <button class="my-button" onclick="toggleContent()">D:<</button>
+        <div id="additional-content" class="additional-content">
+            <p>:o</p>
+        </div>
+    </body>
+</html>
